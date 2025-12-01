@@ -1,39 +1,3 @@
-# import streamlit as st
-# from PIL import Image
-
-# st.title("🎬 IMDB Data Analysis")
-# #  Add custom CSS for background image
-# page_bg_img = '''
-# <style>
-# body {
-#     background-image: url("C:/Users/arsha/OneDrive/Desktop/IMDB_project/background.jpg");
-#     background-size: cover;
-#     background-attachment: fixed;
-# }
-# .stApp {
-#     background-color: rgba(255, 255, 255, 0.85);
-# }
-# </style>
-# '''
-# st.markdown(page_bg_img, unsafe_allow_html=True)
-
-
-# # List of image files
-# images = [
-#     ('Distribution of IMDb Ratings', 'imdbdistribution.png'),
-#     ('Average IMDb Rating by Year', 'AverageRating.png'),
-#     ('Movie Duration vs IMDb Rating', 'movie_duration_distribution.png'),
-#     ('Correlation Heatmap', 'correlation.png'),
-#     ('Metascore vs IMBD rating', 'Metascore_imdb_distribution.png')
-# ]
-
-# # Display images
-# for caption, file in images:
-#     img = Image.open(file)
-#     st.image(img, caption=caption)
-
-# imdb_streamlit_app_updated.py
-
 import streamlit as st
 import pandas as pd
 from PIL import Image
@@ -146,4 +110,5 @@ st.markdown("""
 - Older films and 18+ movies tend to have higher ratings 🎥
 </div>
 """, unsafe_allow_html=True)
+
 
